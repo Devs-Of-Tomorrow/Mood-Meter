@@ -1,12 +1,15 @@
 from django.shortcuts import render
 from django.views import View
 from Maintain.models import Mooddata
+
+
 # Create your views here.
 
 
 class Emphome(View):
 
     def post(self, request):
+        postData = request.POST
         mood1 = request.POST.get('mood1')
         mood2 = request.POST.get('mood2')
         mood3 = request.POST.get('mood3')
@@ -18,7 +21,6 @@ class Emphome(View):
         mood9 = request.POST.get('mood9')
         mood10 = request.POST.get('mood10')
         mood = request.POST.get('mood')
-
 
         submit = request.POST.get('final')
 

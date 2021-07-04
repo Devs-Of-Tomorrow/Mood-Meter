@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel = "icon" href = "smile.png" type = "image/x-icon">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mental Health Form</title>
-        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
-        <style>
+<head>
+    <link rel="icon" href="smile.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Form</title>
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <style>
 
             nav{
                 margin-top: 5px;
@@ -280,9 +280,10 @@
                 font-size: 40px;
             }
 
-            </style>
 
-        <script language="javascript">
+    </style>
+
+    <script language="javascript">
 
             function check(){
                 var radios = document.getElementsByValue("m");
@@ -296,108 +297,111 @@
                 document.getElementById("message1").focus();
                 return false;
             }
-        </script>
 
-    </head>
-    <body>
+    </script>
 
-        <nav>
-            <img src="logo.jpeg" class="logo">
-            <h2 class="floatleft navpadding">Lorem</h2>
-            <p class="navpadding">
+</head>
+<body>
 
-            <a href="index.html">Home Page</a>
-            <a href="login.html" id="loginacc">Login</a>
-            <a href="Signupform.html">Signup</a>
-            <a href="moodmeter.html">Forms</a>
-            <a href="about.html">About</a>
-            <a href="#contact">Contact Us</a>
-        </p>
+<nav>
+    <img src="logo.jpeg" class="logo">
+    <h2 class="floatleft navpadding">Lorem</h2>
+    <p class="navpadding">
 
-        </nav>
+        <a href="http://127.0.0.1:8000/">Home Page</a>
+        <a href="login.html" id="loginacc">Login</a>
+        <a href="/signup">Signup</a>
+        <a href="#contact">Contact Us</a>
+    </p>
 
-        <div class="divform">
-            <h2 class="marginleft">Mental Health Form</h2>
-            <p class="marginleft">We at Lorem, like to make sure that our employees are in the best of their health , both physically and mentally. This form should be filled as honestly as possible, allowing us to help you. </p>
+</nav>
 
-        </div>
+<div class="divform">
+    <h2 class="marginleft">Mental Health Form</h2>
+    <p class="marginleft">We at Lorem, like to make sure that our employees are in the best of their health , both
+        physically and mentally. This form should be filled as honestly as possible, allowing us to help you. </p>
+
+</div>
+<br>
+<div class="divform">
+    {% csrf_token %}
+    <form name="form1" onsubmit="return(check())" action="/" method="POST">
+        {% csrf_token %}
+        <table cellpadding=15 cellspacing=10>
+            <tr>
+                <td colspan="10" id="message1">Choose Emoji</td>
+            </tr>
+            <tr>
+                <td>&#128545;</td>
+                <td>&#128553;</td>
+                <td>&#128546;</td>
+                <td>&#128543;</td>
+                <td>&#128528;</td>
+                <td>&#128578;</td>
+                <td>&#128522;</td>
+                <td>&#128516;</td>
+                <td>&#128518;</td>
+                <td>&#128514;</td>
+
+            </tr>
+            <tr>
+                <td><input type="radio" name="mood1" id="mood1" value="m"></td>
+                <td><input type="radio" name="mood2" id="mood2" value="m"></td>
+                <td><input type="radio" name="mood3" id="mood3" value="m"></td>
+                <td><input type="radio" name="mood4" id="mood4" value="m"></td>
+                <td><input type="radio" name="mood5" id="mood5" value="m"></td>
+                <td><input type="radio" name="mood6" id="mood6" value="m"></td>
+                <td><input type="radio" name="mood7" id="mood7" value="m"></td>
+                <td><input type="radio" name="mood8" id="mood8" value="m"></td>
+                <td><input type="radio" name="mood9" id="mood9" value="m"></td>
+                <td><input type="radio" name="mood10" id="mood10" value="m"></td>
+            </tr>
+        </table>
         <br>
-        <div class="divform">
-             {% csrf_token %}
-            <form name="form1" onsubmit="return(check())" action="/" method="POST">
-                 {% csrf_token %}
-                <table cellpadding=15 cellspacing=10>
-                    <tr>
-                        <td colspan="10" id="message1">Choose Emoji</td>
-                    </tr>
-                    <tr>
-                        <td>&#128545;</td>
-                        <td>&#128553;</td>
-                        <td>&#128546;</td>
-                        <td>&#128543;</td>
-                        <td>&#128528;</td>
-                        <td>&#128578;</td>
-                        <td>&#128522;</td>
-                        <td>&#128516;</td>
-                        <td>&#128518;</td>
-                        <td>&#128514;</td>
+        <button type="submit" value="Signup" name="final" class="submit">Submit</button>
+        {% csrf_token %}
+    </form>
+</div>
 
-                    </tr>
-                    <tr>
-                        <td><input type="radio" name="mood1" id="mood1" value="m"></td>
-                        <td><input type="radio" name="mood2" id="mood2" value="m"></td>
-                        <td><input type="radio" name="mood3" id="mood3" value="m"></td>
-                        <td><input type="radio" name="mood4" id="mood4" value="m"></td>
-                        <td><input type="radio" name="mood5" id="mood5" value="m"></td>
-                        <td><input type="radio" name="mood6" id="mood6" value="m"></td>
-                        <td><input type="radio" name="mood7" id="mood7" value="m"></td>
-                        <td><input type="radio" name="mood8" id="mood8" value="m"></td>
-                        <td><input type="radio" name="mood9" id="mood9" value="m"></td>
-                        <td><input type="radio" name="mood10" id="mood10" value="m"></td>
-                    </tr>
-                </table>
-                <br>
-                <button type="submit" value="Signup"  name="final" class="submit">Submit</button>
-                 {% csrf_token %}
-            </form>
-        </div>
-
-        <div class="divform">
-             {% csrf_token %}
-            Please fill the form provided in the link below once every week, allowing us to help you maintain your mental health and peace.
-            <br><br>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_yP5Jspmwoa9YE7L4MkrfFdsbc7jjNj4hkHpyWE6i3Rs2OQ/viewform">Click Here</a>
-        </div>
+<div class="divform">
+    {% csrf_token %}
+    Please fill the form provided in the link below once every week, allowing us to help you maintain your mental health
+    and peace.
+    <br><br>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_yP5Jspmwoa9YE7L4MkrfFdsbc7jjNj4hkHpyWE6i3Rs2OQ/viewform">Click
+        Here</a>
+</div>
 
 
-        <p class="footer"></p>
-        <footer class="truefooter" id="contact">
-            <div class="floatleft mission">
-                <h4>Our Mission</h4>
-                To provide the guidance and encouragement you need to find the hope, stay motivated and enjoy life to its fullest.
-            </div>
-            <div class="address">
-               <h4>Contact us :</h4>
-                <address>
-                Address:401,AABC,AABC,AABC -123456<br>
-                Phone: 1234567890<br>
-                Email us : <a href="mailto:Lorem0142@gmail.com" class="email">Lorem0142@gmail.com</a>
-                </address>
-            </div>
-            <p class="footer"></p>
-            <div class="floatleft copyright">
-                <h3>Lorem &#169; 2021.</h3>
-            </div>
-             <div class="follow">
-                <p>
-                <h3>Follow us : </h3>
-                <a href="" target="_blank"><img src="fb.png" class="socials" alt="Facebook"></a>
-                <a href="" target="_blank"><img src="insta.png" class="socials" alt="Instagram"></a>
-                <a href="" target="_blank"><img src="twitter.png" class="socials" alt="Twitter"></a>
-                <a href="" target="_blank"><img src="gmail.png" class="socials" alt="Gmail"></a>
-             </div>
-        </footer>
-    </body>
+<p class="footer"></p>
+<footer class="truefooter" id="contact">
+    <div class="floatleft mission">
+        <h4>Our Mission</h4>
+        To provide the guidance and encouragement you need to find the hope, stay motivated and enjoy life to its
+        fullest.
+    </div>
+    <div class="address">
+        <h4>Contact us :</h4>
+        <address>
+            Address:401,AABC,AABC,AABC -123456<br>
+            Phone: 1234567890<br>
+            Email us : <a href="mailto:Lorem0142@gmail.com" class="email">Lorem0142@gmail.com</a>
+        </address>
+    </div>
+    <p class="footer"></p>
+    <div class="floatleft copyright">
+        <h3>Lorem &#169; 2021.</h3>
+    </div>
+    <div class="follow">
+        <p>
+        <h3>Follow us : </h3>
+        <a href="" target="_blank"><img src="fb.png" class="socials" alt="Facebook"></a>
+        <a href="" target="_blank"><img src="insta.png" class="socials" alt="Instagram"></a>
+        <a href="" target="_blank"><img src="twitter.png" class="socials" alt="Twitter"></a>
+        <a href="" target="_blank"><img src="gmail.png" class="socials" alt="Gmail"></a>
+    </div>
+</footer>
+</body>
 
 </html>
 

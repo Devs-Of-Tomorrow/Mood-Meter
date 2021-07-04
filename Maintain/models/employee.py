@@ -23,4 +23,3 @@ class Employee(models.Model):
             return True
 
         return False
-
