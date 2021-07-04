@@ -2,7 +2,7 @@
 
 Let’s understand with flow 
 
-First homepage1 will be shown to user 
+First 'homepage1' will be shown to user 
 Which will contain all intro stuff with log in, sign up btns 
 
 
