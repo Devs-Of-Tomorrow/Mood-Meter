@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "icon" href = "smile.png" type = "image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mental Health Form</title>
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+        <style>
+
+            nav{
+                margin-top: 5px;
+                padding: 10px;
+                border: solid 2px #000000;
+                border-radius:10px;
+                text-align: right;
+                margin-bottom:5px;
+                background-image: linear-gradient(to right,rgba(162, 114, 80, 0.9),rgba(111, 78, 55, 0.9));
+                overflow: hidden;
+            }
+
+
+            .blocks{
+                height:200px;
+                width:500px;
+                padding: 30px;
+                border:solid 2px #000000;
+                float: left;
+                margin-left:70px;
+            }
+
+            div{
+                margin-bottom:20px;
+                overflow:auto;
+            }
+
+            .floatleft{
+                float: left;
+                margin-left:20px;
+                margin-top:10px;
+                color: #000000;
+            }
+
+            .logo{
+                height:100px;
+                width:100px;
+                margin-left:20px;
+                border: 1px solid;
+                align-self: center;
+                border-radius: 50px;
+                float: left;
+            }
+
+            a{
+                padding: 5px;
+                width:50px;
+                margin-top:5px;
+                margin-right:15px;
+                text-decoration: none;
+                color:#000;
+                font-weight: bold;
+                line-height: 18px;
+                font-size: 18px;
+                transition: padding 0.5s ease-in-out;
+            }
+
+            a:hover{
+                padding: 10px;
+                text-decoration: underline;
+                border-radius:5px;
+            }
+
+            .centerdiv{
+                padding:20px;
+                margin-top:10px;
+                margin-left:150px;
+                height:350px;
+                margin-bottom:20px;
+                position:static;
+            }
+
+
+            body{
+                background: url(coffee.jpeg) no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+
+            }
+
+            .final{
+                height:200px;
+                width:200px;
+                padding: 30px;
+                border:solid 2px #000000;
+                border-radius:12px;
+                margin-left:70px;
+                background-image: url(sand.jpg);
+            }
+
+            .footer{
+                clear: left;
+
+            }
+
+            .h2{
+                margin-top:50px;
+            }
+
+            .truefooter{
+                margin-top:120px;
+                padding:20px;
+                border-top: solid 1px #000000;
+                background-color: rgba(162, 114, 80, 0.9);
+                border-radius: 10px;
+                color:#000;
+
+            }
+
+            button{
+                height:40px;
+                width:80px;
+                font-size: 14px;
+                background-color:#c09a7f;
+                transition: width 1s ease-out;
+                border-radius: 10px;
+            }
+
+            button:hover{
+                cursor: pointer;
+                width:150px;
+                background-color: #c09a7f;
+                opacity: 1;
+                border-radius: 10px;
+            }
+
+            section{
+                margin-top:30px;
+                margin-left: 50px;
+            }
+
+            .block1{
+                background-image: url(div1.jpg);
+            }
+
+            .block2{
+                background-image: url(div2.png);
+                background-size: 100% 100%;
+                border-radius: 200px;
+                height: 250px;
+            }
+
+            .block3{
+                background-image: url(div3.jpg);
+            }
+
+            .block4{
+                background-image: url(div4.jpg);
+            }
+
+            .textblock{
+                height:130px;
+                width:700px;
+                padding: 50px;
+                float: left;
+                margin-left:70px;
+                font-size: 18px;
+                text-align: justify;
+                line-height: 1.4;
+                color: #000000;
+                background-color: rgba(162, 114, 80, 1);
+                border: 2px solid #6f4e37;
+                border-radius: 50px;
+            }
+
+            .button{
+                height:50px;
+                width:50px;
+                border:solid 1px;
+                border-radius:6px;
+                background-color:#80CFD4;
+                transition: width 1s ease-in-out;
+            }
+
+            .socials{
+                border-style: none;
+                margin-left: 10px;
+                height: 30px;
+                width: 30px;
+            }
+
+            h3{
+                margin-top: 3px;
+                float: left;
+            }
+
+            .follow{
+                padding-left: 60px;
+                border-top: 1px solid #000;
+            }
+
+            h1{
+                background-color: rgba(162, 114, 80, 0.9);
+                border:2px solid #6f4e37;
+                border-radius: 10px;
+                width:30%;
+                padding: 10px;
+                color: #000;
+            }
+
+            .mission{
+                width: 40%;
+                border-right: 1px solid #000;
+                height:120px;
+                padding:5px;
+                padding-right: 30px;
+            }
+
+            .address{
+                margin-left: 50px;
+                padding-top: 10px;
+                padding-left:50px;
+                width:50%;
+                height: 120px;
+                text-align:left;
+            }
+
+            .copyright{
+                border-top: 1px solid #000;
+                padding-top: 15px;
+                margin-top: 0px;
+                padding-right: 15px;
+            }
+
+            .emoji{
+                width:40px;
+                height: 40px;
+            }
+
+            .divform{
+                border-radius: 10px;
+                text-align: center;
+                background-image: url(moodbg.jpg);
+                background-size: cover;
+                background-position:center;
+                margin-left: 150px;
+                width:70%;
+                margin-top:100px;
+                border: solid #000000 3px;
+                padding:10px;
+
+            }
+
+            table{
+                margin:auto;
+            }
+
+            td{
+                margin: auto;
+                width: 50px;
+                height:50px;
+            }
+
+            input[type=radio]{
+                width: 100%;
+                height:16px;
+            }
+
+            .navpadding{
+                padding-top: 25px;
+            }
+
+            .email{
+                font-size: 16px;
+            }
+
+            td{
+                height:70px;
+                width: 100px;
+                font-size: 40px;
+            }
+
+            </style>
+
+        <script language="javascript">
+
+            function check(){
+                var radios = document.getElementsByValue("m");
+
+                for (var i = 0, len = radios.length; i < len; i++) {
+                    if (radios[i].checked) {
+                        return true;
+                    }
+                }
+                document.getElementById("message1").innerHTML="Please Select an Option.";
+                document.getElementById("message1").focus();
+                return false;
+            }
+        </script>
+
+    </head>
+    <body>
+
+        <nav>
+            <img src="logo.jpeg" class="logo">
+            <h2 class="floatleft navpadding">Lorem</h2>
+            <p class="navpadding">
+
+            <a href="index.html">Home Page</a>
+            <a href="login.html" id="loginacc">Login</a>
+            <a href="Signupform.html">Signup</a>
+            <a href="moodmeter.html">Forms</a>
+            <a href="about.html">About</a>
+            <a href="#contact">Contact Us</a>
+        </p>
+
+        </nav>
+
+        <div class="divform">
+            <h2 class="marginleft">Mental Health Form</h2>
+            <p class="marginleft">We at Lorem, like to make sure that our employees are in the best of their health , both physically and mentally. This form should be filled as honestly as possible, allowing us to help you. </p>
+
+        </div>
+        <br>
+        <div class="divform">
+             {% csrf_token %}
+            <form name="form1" onsubmit="return(check())" action="/" method="POST">
+                 {% csrf_token %}
+                <table cellpadding=15 cellspacing=10>
+                    <tr>
+                        <td colspan="10" id="message1">Choose Emoji</td>
+                    </tr>
+                    <tr>
+                        <td>&#128545;</td>
+                        <td>&#128553;</td>
+                        <td>&#128546;</td>
+                        <td>&#128543;</td>
+                        <td>&#128528;</td>
+                        <td>&#128578;</td>
+                        <td>&#128522;</td>
+                        <td>&#128516;</td>
+                        <td>&#128518;</td>
+                        <td>&#128514;</td>
+
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="mood1" id="mood1" value="m"></td>
+                        <td><input type="radio" name="mood2" id="mood2" value="m"></td>
+                        <td><input type="radio" name="mood3" id="mood3" value="m"></td>
+                        <td><input type="radio" name="mood4" id="mood4" value="m"></td>
+                        <td><input type="radio" name="mood5" id="mood5" value="m"></td>
+                        <td><input type="radio" name="mood6" id="mood6" value="m"></td>
+                        <td><input type="radio" name="mood7" id="mood7" value="m"></td>
+                        <td><input type="radio" name="mood8" id="mood8" value="m"></td>
+                        <td><input type="radio" name="mood9" id="mood9" value="m"></td>
+                        <td><input type="radio" name="mood10" id="mood10" value="m"></td>
+                    </tr>
+                </table>
+                <br>
+                <button type="submit" value="Signup"  name="final" class="submit">Submit</button>
+                 {% csrf_token %}
+            </form>
+        </div>
+
+        <div class="divform">
+             {% csrf_token %}
+            Please fill the form provided in the link below once every week, allowing us to help you maintain your mental health and peace.
+            <br><br>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_yP5Jspmwoa9YE7L4MkrfFdsbc7jjNj4hkHpyWE6i3Rs2OQ/viewform">Click Here</a>
+        </div>
+
+
+        <p class="footer"></p>
+        <footer class="truefooter" id="contact">
+            <div class="floatleft mission">
+                <h4>Our Mission</h4>
+                To provide the guidance and encouragement you need to find the hope, stay motivated and enjoy life to its fullest.
+            </div>
+            <div class="address">
+               <h4>Contact us :</h4>
+                <address>
+                Address:401,AABC,AABC,AABC -123456<br>
+                Phone: 1234567890<br>
+                Email us : <a href="mailto:Lorem0142@gmail.com" class="email">Lorem0142@gmail.com</a>
+                </address>
+            </div>
+            <p class="footer"></p>
+            <div class="floatleft copyright">
+                <h3>Lorem &#169; 2021.</h3>
+            </div>
+             <div class="follow">
+                <p>
+                <h3>Follow us : </h3>
+                <a href="" target="_blank"><img src="fb.png" class="socials" alt="Facebook"></a>
+                <a href="" target="_blank"><img src="insta.png" class="socials" alt="Instagram"></a>
+                <a href="" target="_blank"><img src="twitter.png" class="socials" alt="Twitter"></a>
+                <a href="" target="_blank"><img src="gmail.png" class="socials" alt="Gmail"></a>
+             </div>
+        </footer>
+    </body>
+
+</html>
+
+<!--Developed By Roshith Prakash And Amir Pathan-->
