@@ -31,6 +31,7 @@ class Signup(View):
                             phone=phone,
                             email=email,
                             password=password)
+        error_message = self.validateEmployee(employee)
 
         if not error_message:
             employee.password = make_password(employee.password)
@@ -43,7 +44,8 @@ class Signup(View):
                 'valuse': value
             }
 
-        return render(request, 'signup.html', data)
+            print('hiiiiiiiiiiii', data['error'])
+            return render(request, 'signup.html', data)
 
     def validateEmployee(self, employee):
         error_message = None;
