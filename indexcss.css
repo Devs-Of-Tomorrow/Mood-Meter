@@ -1,0 +1,261 @@
+@media only screen and (max-width: 600px)
+{
+
+}
+
+
+@media only screen and (min-width: 600px)
+{
+    footer{
+        text-align: center;
+        border-top: 1px solid;
+        font-size: 2.2vh;
+    }
+    
+    .fa{
+        padding: 15px;
+        height:50px;
+        width:50px;
+        box-sizing: border-box;
+        border-radius: 25px;
+        border: 1px solid;
+        margin-right: 5px;
+        text-decoration: none;
+        font-size: 2.5vh;
+    }
+    
+    .fa:hover{
+        background-color: #add8e6;    
+        color: #000;
+        border: 2px solid; 
+    }
+    
+    .socials{
+        margin-top:5px;
+        margin-bottom:20px;
+    }
+    
+    .to-top{
+        padding-left:11px;
+        padding-top: 4px;
+        box-sizing: border-box;
+        position: fixed;
+        height:50px;
+        width: 50px;
+        right: 20px;
+        bottom: 20px;
+        border-radius: 25px;
+        border:1px solid #000;
+        background-color: #add8e6;
+        text-decoration: none;
+        font-size: 4vh;
+    }
+}
+
+
+@media only screen and (min-width: 768px)
+{
+    footer{
+        text-align: center;
+        border-top: 1px solid;
+        font-size: 2.2vh;
+    }
+    
+    .fa{
+        padding: 15px;
+        height:50px;
+        width:50px;
+        box-sizing: border-box;
+        border-radius: 25px;
+        border: 1px solid;
+        margin-right: 5px;
+        text-decoration: none;
+        font-size: 2.5vh;
+    }
+    
+    .fa:hover{
+        background-color: #add8e6;    
+        color: #000;
+        border: 2px solid; 
+    }
+    
+    .socials{
+        margin-top:5px;
+        margin-bottom:20px;
+    }
+    
+    .to-top{
+        padding-left:11px;
+        padding-top: 4px;
+        box-sizing: border-box;
+        position: fixed;
+        height:50px;
+        width: 50px;
+        right: 20px;
+        bottom: 20px;
+        border-radius: 25px;
+        border:1px solid #000;
+        background-color: #add8e6;
+        text-decoration: none;
+        font-size: 4vh;
+    }
+}
+
+
+@media only screen and (min-width: 992px)
+{
+    footer{
+        text-align: center;
+        border-top: 1px solid;
+        font-size: 2.2vh;
+    }
+    
+    .fa{
+        padding: 15px;
+        height:50px;
+        width:50px;
+        box-sizing: border-box;
+        border-radius: 25px;
+        border: 1px solid;
+        margin-right: 5px;
+        text-decoration: none;
+        font-size: 2.5vh;
+    }
+    
+    .fa:hover{
+        background-color: #add8e6;    
+        color: #000;
+        border: 2px solid; 
+    }
+    
+    .socials{
+        margin-top:5px;
+        margin-bottom:20px;
+    }
+    
+    .to-top{
+        padding-left:11px;
+        padding-top: 4px;
+        box-sizing: border-box;
+        position: fixed;
+        height:50px;
+        width: 50px;
+        right: 20px;
+        bottom: 20px;
+        border-radius: 25px;
+        border:1px solid #000;
+        background-color: #add8e6;
+        text-decoration: none;
+        font-size: 4vh;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+
+    .navbar{
+        background-color: #add8e6;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 80px;
+        position: absolute;
+        top:0;
+        left: 0;
+        border-bottom: 2px solid;
+        text-align: right;
+        
+    }
+    
+    .navlogo{
+        height: 90%;
+        width: 5%;
+        margin-top: 2px;
+        margin-left: 50px;
+        margin-right: 50px;
+        float: left;
+    }
+
+    .navlinkp{
+        margin-top: 30px;
+        padding-right: 20px;
+    }
+
+    .navlink{
+        margin-right: 20px;
+        font-size:2.5vh;
+        text-decoration: none;
+    }
+
+    .navlink:hover{
+        color:slateblue;
+        text-decoration: underline;
+    }
+
+    .centerdiv{
+        margin-left: -8px;
+        width:101%;
+        height:600px;
+        padding-top:200px;
+        box-sizing: border-box;
+        padding-left: 100px;
+        margin-top:82px;
+        background-image: url(icon.jpg);
+        background-size: 100% 100%;
+    }
+
+
+
+    .contactdiv{
+        text-align: center;
+    }
+
+    footer{
+        margin-top: 50px;
+        padding-top: 10px;
+        text-align: center;
+        padding-bottom: 20px;
+        border-top: 1px solid;
+        font-size: 2.2vh;
+    }
+    
+    .fa{
+        padding: 15px;
+        height:50px;
+        width:50px;
+        box-sizing: border-box;
+        border-radius: 25px;
+        border: 1px solid;
+        margin-right: 5px;
+        text-decoration: none;
+        font-size: 2.5vh;
+    }
+    
+    .fa:hover{
+        background-color: #add8e6;    
+        color: #000;
+        border: 2px solid; 
+    }
+    
+    .socials{
+        margin-top:5px;
+        margin-bottom:20px;
+    }
+    
+    .to-top{
+        padding-left:11px;
+        padding-top: 4px;
+        box-sizing: border-box;
+        position: fixed;
+        height:50px;
+        width: 50px;
+        right: 20px;
+        bottom: 20px;
+        border-radius: 25px;
+        border:1px solid #000;
+        background-color: #add8e6;
+        text-decoration: none;
+        font-size: 4vh;
+    }
+    
+   
+}
+
