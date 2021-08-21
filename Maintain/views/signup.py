@@ -3,7 +3,6 @@ from django.shortcuts import render, redirect
 from Maintain.models.employee import Employee
 from django.contrib.auth.hashers import make_password
 
-
 class Signup(View):
     def get(self, request):
         return render(request, 'signup.html')
@@ -44,7 +43,7 @@ class Signup(View):
                 'valuse': value
             }
 
-            print('hiiiiiiiiiiii', data['error'])
+
             return render(request, 'signup.html', data)
 
     def validateEmployee(self, employee):

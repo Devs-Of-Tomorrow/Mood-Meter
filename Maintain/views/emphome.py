@@ -57,7 +57,6 @@ class Emphome(View):
             return render(request, 'empind.html', data)
 
     def get(self, request):
-
         data = {}
-        # print(request.session.get('customer_id'))
+        #print("hiiiiiiiiii", request.session.get('first_name'))
         return render(request, 'emphome.html', data)

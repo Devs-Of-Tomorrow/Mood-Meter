@@ -17,3 +17,7 @@ class Mooddata(models.Model):
     @staticmethod
     def get_all_mooddata():
         return Mooddata.objects.all()
+
+    @staticmethod
+    def get_all_moodnum(moodnum):
+        return Mooddata.objects.get(moodnum)
